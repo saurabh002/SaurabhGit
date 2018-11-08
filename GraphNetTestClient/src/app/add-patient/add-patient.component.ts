@@ -14,11 +14,17 @@ export class AddPatientComponent implements OnInit {
   constructor(private formBuilder: FormBuilder,private router: Router, private patientService: PatientService) { }
   addForm: FormGroup;
   submitted = false;
+  validateDOB(e){
+    let dob = new Date(e);
+    let today = new Date();
+    if(dob > today){
+      return { 'has-danger': !this.addForm.controls["DateOfBirth"].pristine && !this.addForm.controls["DateOfBirth"].valid};
+    }};
   ngOnInit() {
     this.addForm = this.formBuilder.group({
       PatientId: ['', Validators.required],
-      FirstName: ['', Validators.required],
-      LastName: ['', Validators.required],
+      FirstName: ['', Validators.compose([Validators.required, Validators.minLength(3), Validators.maxLength(50)])],
+      LastName: ['', Validators.compose([Validators.required, Validators.minLength(3), Validators.maxLength(50)])],
       Gender: [''],
       DateOfBirth: [''],
       Phone: this.formBuilder.group({ HomePhone:['',Validators.pattern("[0-9]\\d{9}")], WorkPhone:['',Validators.pattern("[0-9]\\d{9}")], 
@@ -38,5 +44,4 @@ export class AddPatientComponent implements OnInit {
         this.router.navigate(['patient']);
       });
   }
-
 }
