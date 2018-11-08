@@ -1,0 +1,16 @@
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\bin\Debug\GraphNetTest.BusinessServices.dll
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\bin\Debug\GraphNetTest.BusinessServices.pdb
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\bin\Debug\EntityFramework.dll
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\bin\Debug\GraphNetTest.Data.dll
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\bin\Debug\GraphNetTest.Model.dll
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\bin\Debug\EntityFramework.xml
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\bin\Debug\GraphNetTest.Data.pdb
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\bin\Debug\GraphNetTest.Model.pdb
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\obj\Debug\GraphNetTest.BusinessServices.dll
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\obj\Debug\GraphNetTest.BusinessServices.pdb
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\bin\Debug\AutoMapper.dll
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\bin\Debug\System.ValueTuple.dll
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\bin\Debug\AutoMapper.pdb
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\bin\Debug\AutoMapper.xml
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\bin\Debug\System.ValueTuple.xml
+D:\padai\GraphNetTest\GraphNetTest.BusinessServices\obj\Debug\GraphNetTest.BusinessServices.csprojResolveAssemblyReference.cache

@@ -1,0 +1,10 @@
+D:\padai\GraphNetTest\GraphNetTest.Data\bin\Debug\EntityFramework.xml
+D:\padai\GraphNetTest\GraphNetTest.Data\bin\Debug\GraphNetTest.Data.dll.config
+D:\padai\GraphNetTest\GraphNetTest.Data\bin\Debug\GraphNetTest.Data.dll
+D:\padai\GraphNetTest\GraphNetTest.Data\bin\Debug\GraphNetTest.Data.pdb
+D:\padai\GraphNetTest\GraphNetTest.Data\bin\Debug\EntityFramework.dll
+D:\padai\GraphNetTest\GraphNetTest.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\padai\GraphNetTest\GraphNetTest.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\padai\GraphNetTest\GraphNetTest.Data\obj\Debug\GraphNetTest.Data.csprojResolveAssemblyReference.cache
+D:\padai\GraphNetTest\GraphNetTest.Data\obj\Debug\GraphNetTest.Data.dll
+D:\padai\GraphNetTest\GraphNetTest.Data\obj\Debug\GraphNetTest.Data.pdb

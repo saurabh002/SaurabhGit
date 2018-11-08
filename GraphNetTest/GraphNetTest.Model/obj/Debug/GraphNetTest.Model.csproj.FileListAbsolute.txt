@@ -1,0 +1,4 @@
+D:\padai\GraphNetTest\GraphNetTest.Model\bin\Debug\GraphNetTest.Model.dll
+D:\padai\GraphNetTest\GraphNetTest.Model\bin\Debug\GraphNetTest.Model.pdb
+D:\padai\GraphNetTest\GraphNetTest.Model\obj\Debug\GraphNetTest.Model.dll
+D:\padai\GraphNetTest\GraphNetTest.Model\obj\Debug\GraphNetTest.Model.pdb
