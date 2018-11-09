@@ -24,8 +24,10 @@ namespace GraphNetTest.BusinessServices
 
         public List<Patient> GetPatients()
         {
-            var patients = this._patientRepository.GetAll().ToList();
-            var list = new List<Patient>();
+         var patients = this._patientRepository.GetAll().ToList();
+         var list = new List<Patient>();
+          if(patients?.Count()>0){
+
             foreach (var c in patients)
             {
                 list.Add(new Patient
@@ -38,6 +40,7 @@ namespace GraphNetTest.BusinessServices
                     Phone = new TelephoneNumber { HomePhone = c.HomePhone, WorkPhone = c.WorkPhone, CellPhone = c.CellPhone }
                 });
             }
+         }
             return list;
             //var config = new MapperConfiguration(cfg =>
             //{
@@ -53,23 +56,27 @@ namespace GraphNetTest.BusinessServices
 
         public Patient GetPatient(string id)
         {
+          
             var c = this._patientRepository.GetSingle(id);
-            var p = new Patient()
-            {
+            if(c!=null){
+             var p = new Patient()
+             {
                 PatientId = c.PatientId,
                 FirstName = c.FirstName,
                 LastName = c.LastName,
                 DateOfBirth = c.DateOfBirth,
                 Gender = c.Gender,
                 Phone = new TelephoneNumber { HomePhone = c.HomePhone, WorkPhone = c.WorkPhone, CellPhone = c.CellPhone }
-            };
-
+             };
+          }
             return p;
 
         }
 
         public int AddPatient(Patient p)
         {
+            try
+            {
             var patient = new PatientData()
             {
                 PatientId = p.PatientId,
@@ -81,8 +88,7 @@ namespace GraphNetTest.BusinessServices
                 WorkPhone = p.Phone?.WorkPhone,
                 CellPhone = p.Phone?.CellPhone
             };
-            try
-            {
+
                 this._patientRepository.Add(patient);
                 this._patientRepository.Save();
             }
@@ -99,6 +105,8 @@ namespace GraphNetTest.BusinessServices
 
         public void UpdatePatient(Patient p)
         {
+        try
+            {
             var patient = new PatientData()
             {
                 PatientId = p.PatientId,
@@ -112,6 +120,11 @@ namespace GraphNetTest.BusinessServices
             };
             this._patientRepository.Edit(patient);
             this._patientRepository.Save();
+         }
+         catch (Exception)
+            {
+                throw;
+            }
         }
 
         public void DeletePatient(Patient p)
